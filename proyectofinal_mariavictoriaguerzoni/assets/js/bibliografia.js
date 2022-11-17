@@ -195,24 +195,7 @@ function filtrar() {
             duration: 3000
         }).showToast();
 
-        /*bloque de codigo para renderizar en pantalla el tema buscado y encontrado*/
-        if (temarioJSON.filter(e=>e.titulo===opcionDeUsuario)){
-            console.log(opcionDeUsuario)
-            for(const opcionDeUsuario of temarioJSON ){
-                sectionCards.innerHTML = `
-                    <div class="card col-sm-2 mt-5">
-                        <img src=${opcionDeUsuario.imagen} class="card-img-top" alt=${opcionDeUsuario.titulo}>
-                        <div class="card-body">
-                            <h5 class="card-title">${opcionDeUsuario.titulo}</h5>
-                            <p class="card-text">${opcionDeUsuario.categoria}</p>
-                            <p class="card-text">${(opcionDeUsuario.precio/dolarCompra).toFixed(2)}</p>
-                            <button id='btn${opcionDeUsuario.id}'class="btn-primary">Comprar</button>           
-                        </div>
-                    </div>
-                `;
-            }
-        }
-       
+      
 
     } else {
         console.log("no se encontro tema");
