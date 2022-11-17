@@ -1,0 +1,76 @@
+*{margin:auto; padding: 0;}
+body{
+    transition: all O.3s;
+    
+}
+.light{
+    background-color: white;
+    color: black;
+}
+.dark{
+    background-color:#5d18a6;
+    color: white;
+}
+#cards{
+    background:url(../imagenes/patternpad.png);
+    color:black;
+}
+#biblioCards{
+    color:black;
+}
+
+
+
+footer{
+    background-color: #162b62;
+    align-content: center;
+    text-align: center;
+    color:#fff;
+}
+/*mensaje de validacion de la alerta de ejercicio */
+.my-validation-message::before {
+    display: none;
+}
+  
+.my-validation-message i {
+    margin: 0 .4em;
+    color: #f27474;
+    font-size: 1.4em;
+}
+
+/*configuracion estetica de la pagina ejercicios*/
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+    
+}
+#encabezado{
+    background: #5d18a6;
+    color:#fff;
+    width: 70%;
+    
+}
+.categoria{
+    opacity: 0.3;
+    color: #fff;
+    text-align: left;
+}
+.pregunta{
+    padding: 10px;
+}
+
+.btn{
+    width: 60%;
+    padding: 10px;
+    margin: 5px;
+}
+.btn:hover{
+    background: #1d94a4;
+    color:#fff;
+    cursor: pointer;
+    transform: scale(1.05);
+}

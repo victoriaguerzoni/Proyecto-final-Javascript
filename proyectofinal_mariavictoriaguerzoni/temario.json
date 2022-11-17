@@ -1,0 +1,30 @@
+
+[{
+    "id":0,
+    "imagen":"../assets/imagenes/bibliografiasemiologia.png",
+    "titulo":"semiologia obstetrica",
+    "categoria":"obstetricia clinica",
+    "precio":1000
+    },
+    {
+    "id":"1",
+    "imagen":"../assets/imagenes/bibliografiaExamenobstetrico.png",
+    "titulo":"examen obstetrico",
+    "categoria":"obstetricia clinica",
+    "precio":1200
+    },
+    {
+    "id":2,
+    "imagen":"../assets/imagenes/bibliografiacontrolprenatal.png",
+    "titulo":"control prenatal",
+    "categoria":"obstetricia clinica",
+    "precio":1100
+    },
+    {
+    "id":3,
+    "imagen":"../assets/imagenes/bibliografiapuerperio.png",
+    "titulo":"puerperio",
+    "categoria":"obstetricia clinica",
+    "precio":1050
+    
+}]

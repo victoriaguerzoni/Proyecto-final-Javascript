@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="../assets/css/estilos.css" rel="stylesheet">
+    <title>Bibliografia</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#162b6e">
+            <div class="container-fluid">
+                <a class="navbar-brand">
+                    <img src="../assets/imagenes/logotavo.png" width="50px" height="50px" class="rounded-circle">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#miFooter">Contactos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="../pages/bibliografia.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                             Bibliografia
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../pages/bibliografia.html">Obstetricia Clinica</a></li>
+                                <li><a class="dropdown-item" href="../pages/bibliografia.html">Obstetricia Normal</a></li>
+                                <li><a class="dropdown-item" href="../pages/bibliografia.html">Obstetricia Patologica</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="../pages/ejercicios.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                             Ejercicios
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../pages/ejercicios.html"> Nivel Basicos</a></li>
+                                <li><a class="dropdown-item" href="../pages/ejercicios.html"> Nivel Intermedio</a></li>
+                                <li><a class="dropdown-item" href="../pages/ejercicios.html">Nivel Avanzado</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="../pages/simulador.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                             Simuladores
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Simulador 1</a></li>
+                                <li><a class="dropdown-item" href="#">simulador 2</a></li>
+                                <li><a class="dropdown-item" href="#">Simulador 3</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li id="principal"class="mt-2 align-content-center text-white form-check form-switch light" style="background-color:#162b6e">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Modo</label>
+                        </li>
+                        
+                    </ul>
+                    <form class="d-flex">
+                        <input id="buscador" class="form-control me-3" type="search" placeholder="¿que tema deseas buscar?" aria-label="Search">
+                        <button id="btn-seach"class="btn btn-info light" type="button">Buscar Tema</button>
+                    </form>
+                </div>
+            </div>
+        </nav>        
+    </header>
+    <section>
+        <h1>BIBLIOGRAFIA</h1>
+        <h3 id="infoDeDolarHoy">Cotizacion del Dolar en Argentina</h3>
+    </section>
+    <section id="biblioCards" class="text-center d-flex flex-row justify-content-center">
+        <!-- lugar que ocupan las tarjetas -->
+    </section>
+    <section>
+        <h4>TU CARRITO</h4>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody id="tabladeCompras"></tbody>
+            <!--tabla de compras del carrito-->
+        </table>
+        <h4 id="total">Total a pagar en $ARS</h4>
+        <button id="compraFin" class="btn btn-primary">Finalizar Compra</button>
+        <footer id="miFooter">
+            <span>Todos los derechos reservados</span>
+            <span>Av. juan de los palotes 123 - Ciudad Autonoma de Buenos Aires</span>
+            <span>consultas: tavo-consulta@tavo.com.ar</span>
+        </footer>
+    </section>
+    
+
+<script src="https://cdn.jsdelivr.net/npm/luxon@3.0.4/build/global/luxon.min.js"></script>   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="../assets/js/bibliografia.js"></script>
+<script src="../assets/js/modovisual.js"></script>
+
+    
+</body>
+</html>

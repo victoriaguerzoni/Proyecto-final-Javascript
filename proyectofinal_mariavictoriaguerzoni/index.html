@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologia de Aprendizaje Virtual en Obstentricia</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/estilos.css"/>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#162b6e">
+            <div class="container-fluid">
+                <a class="navbar-brand">
+                    <img src="assets/imagenes/logotavo.png" width="50px" height="50px" class="rounded-circle">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#miFooter">Contactos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="./pages/bibliografia.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                             Bibliografia
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./pages/bibliografia.html">Obstetricia Clinica</a></li>
+                                <li><a class="dropdown-item" href="./pages/bibliografia.html">Obstetricia Normal</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="./pages/bibliografia.html">Obstetricia Patologica</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="./pages/ejercicios.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                             Ejercicios
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./pages/ejercicios.html"> Nivel Basicos</a></li>
+                                <li><a class="dropdown-item" href="./pages/ejercicios.html"> Nivel Intermedio</a></li>
+                                <li><a class="dropdown-item" href="./pages/ejercicios.html">Nivel Avanzado</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="./pages/simulador.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                             Simuladores
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./pages/simulador.html">Simulador 1</a></li>
+                                <li><a class="dropdown-item" href="./pages/simulador.html">simulador 2</a></li>
+                                <li><a class="dropdown-item" href="./pages/simulador.html">Simulador 3</a></li>
+                            </ul>
+                        </li>
+                        <li id="principal"class="mt-2 align-content-center text-white form-check form-switch light" style="background-color:#162b6e">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Modo</label>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>        
+    </header>
+    <section>
+        <h1 class="text-center">Bienvenidos a TAVO.</h1>
+        <p class="text-center"> TAVO es un sitio web interactivo pensado para todos aquellos usuarios que quieran capacitarse en obstetricia, con el objetivo de ayudarlos a incorporar nuevos conocimientos de forma ordenada y generando espacios de autoevaluación. A su vez es dinámica y colaborativa, es decir que pueden interactuar entre participantes con distintos niveles formativos. 
+            Su fundamento se basa en adquirir un pensamiento integral para el abordaje de las gestantes.
+        </p>
+    </section>
+    <section id="cards" class="p-5 text-center d-flex flex-row justify-content-center">
+    <!-- lugar que ocupan las tarjetas -->
+    </section>
+    <section>
+        <!--Registrarse-->
+        <div id="formulario" class="row g-3 p-4">
+            <div class="col-12">
+                <label for="inputNombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="inputNombre" placeholder="escribi tu nombre" required>
+            </div>
+            <div class="col-12">
+                <label for="inputApellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="inputApellido" placeholder="escribi tu apellido" required>
+            </div>
+            <div class="col-md-12">
+                <label for="contrasena" class="form-label">Contraseña</label>
+                <input type="text" class="form-control" id="contrasena" required>
+            </div>
+            <button id="btnRegistrar" type="submit" class="btn btn-primary">Registrarme</button> 
+        </div>
+    </section>
+    <footer id="miFooter">
+        <span>Todos los derechos reservados</span>
+        <span>Av. juan de los palotes 123 - Ciudad Autonoma de Buenos Aires</span>
+        <span>consultas: tavo-consulta@tavo.com.ar</span>
+    </footer>
+    <!--scripts de librerias: boostrap, sweetalert2 y tostify-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!--scripts de pagina js inicio tiene la logica de toda la pagina de inicio y modovisual.js el codigo para modificar el modo claro/oscuro y guardarlo en el storage-->
+    <script src="./assets/js/inicio.js"></script>
+    <script src="./assets/js/modovisual.js"></script>
+    
+</body>
+</html>
